@@ -83,7 +83,7 @@ fig.show()
 
 ## Included Hpspital JCODE and NDC Count
 ``` {python}
-show(pl.read_parquet('data\hospital_check.parquet'))
+show(pl.read_parquet(Path('data\hospital_check.parquet')))
 ```
 
 ## Hospital locations
