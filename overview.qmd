@@ -14,12 +14,13 @@ import polars as pl
 import plotly.express as px
 from itables import options
 from polars import col as c
+from pathlib import Path
 options.buttons = ['copy', 'excel', 'pdf']
 rename_dict = {'was_downloaded':'Downloaded','is_correct_format':'Correct Format','has_drugs':'Has Drugs'}
-state_data = pl.read_parquet('state_check.parquet').rename(rename_dict)
-hospital_data = pl.scan_parquet('hospital.parquet')
-ndc_data = pl.scan_parquet('ndc_names.parquet')
-hcpcs_desc = pl.scan_parquet('hcpcs_desc.parquet')
+state_data = pl.read_parquet('data\state_check.parquet').rename(rename_dict)
+hospital_data = pl.scan_parquet('data/hospital.parquet')
+ndc_data = pl.scan_parquet('data/ndc_names.parquet')
+hcpcs_desc = pl.scan_parquet('data/hcpcs_desc.parquet')
 ```
 
 
@@ -82,7 +83,7 @@ fig.show()
 
 ## Included Hpspital JCODE and NDC Count
 ``` {python}
-show(pl.read_parquet('hospital_check.parquet'))
+show(pl.read_parquet('data\hospital_check.parquet'))
 ```
 
 ## Hospital locations
