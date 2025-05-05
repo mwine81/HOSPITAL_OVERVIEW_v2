@@ -58,7 +58,7 @@ fig.update_traces(width=0.3)
 fig.show()
 ```
 
-
+## State Specific State Counts
 
 ``` {python}
 show(state_data)
@@ -81,7 +81,7 @@ fig.show()
 
 ```
 
-## Included Hpspital JCODE and NDC Count
+## Included Hospital JCODE and NDC Count
 ``` {python}
 show(pl.read_parquet('hospital_check.parquet'))
 ```
