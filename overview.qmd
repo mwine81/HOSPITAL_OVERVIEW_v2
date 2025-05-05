@@ -38,7 +38,7 @@ flowchart LR
 1. Files where downloaded from the PRA Website
     + CSV files
     + 1 gig or less
-2. Files where tested to identify likely files adhearing to CMS alloable formats
+2. Files where tested for CMS approved formats
     + Header spanning 1st two rows
     + A column following code | [i] patteren (ex: code | 1, code | 2) as defined by CMS
         + [CMS Hospital Price Transparency Documentation](https://github.com/CMSgov/hospital-price-transparency/tree/master/documentation/CSV)
