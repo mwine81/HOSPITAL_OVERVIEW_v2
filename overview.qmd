@@ -3,7 +3,7 @@
 code-fold: true
 echo: false
 ---
-![](data/logo.jpg){width="10%"}
+![](logo.jpg){width="10%"}
 
 # Hospital Transparancy File Overview
 
